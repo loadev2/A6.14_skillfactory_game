@@ -1,9 +1,28 @@
+/* COMMON STYLES */
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+/* FIELD STYLES*/
+.game-field-wrapper{
+	display: grid;
+	grid-template-columns: repeat(6, minmax(150px, auto));
+	grid-template-rows: repeat(7, 10vh);
+	grid-gap: 1px;
+	padding: 10px;
+}
+.game-field-wrapper h1{
+	grid-column: 1/7;
+}
+
 .game-field {
   background-color: orange;
-  min-height: 10vh;
-  margin: 1px 1px 1px 1px;
-  line-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .target {
   background-color: green;
@@ -14,4 +33,10 @@
 
 .miss {
   background-color: red;
+}
+
+
+/* MESSAGE AND BUTTON FIELD */
+.win-block, .button-block{
+	margin-left: 10px;
 }
